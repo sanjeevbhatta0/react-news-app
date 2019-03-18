@@ -19,7 +19,7 @@ export default class App extends React.Component {
       .then(res => {
         const news = res.data.articles;
         this.setState({ news });
-        //console.log(news);
+        console.log(news);
       })
       .catch(err => {
         console.log(err);
@@ -33,6 +33,7 @@ export default class App extends React.Component {
         image={article.urlToImage}
         title={article.title}
         description={article.description}
+        source={article.source.name}
         url={article.url}
       />
     ));

@@ -8,6 +8,7 @@ function NewsCards(props, id) {
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.description}</p>
+          <footer className="blockquote-footer"><cite title="Source Title">{props.source}</cite></footer>
           <a href={props.url} target="noopener noreferrer">
             Read More
           </a>
